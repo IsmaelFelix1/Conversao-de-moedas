@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         this.mViewHolder.editValue = findViewById(R.id.edit_value);
         this.mViewHolder.TextDolar = findViewById(R.id.Text_dolar);
         this.mViewHolder.TextEuro = findViewById(R.id.TextEuro);
-        this.mViewHolder.TextEuro = findViewById(R.id.TextEuro);
         this.mViewHolder.buttonCalculate = findViewById(R.id.buttonCalculate);
         this.mViewHolder.buttonCalculate.setOnClickListener(this);
         this.mViewHolder.TextDolar.setOnClickListener(this);
@@ -32,15 +31,21 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         if(v.getId() == R.id.buttonCalculate){
             String value = this.mViewHolder.editValue.getText().toString();
             if("".equals(value)) {
-                Toast.makeText(this, R.string.informe_valor, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, this.getString(R.string.informe_valor), Toast.LENGTH_LONG).show();
             } else{
                 Double real = Double.valueOf(value);
+
+                this.mViewHolder.TextDolar.setText(String.format("%.2f", (real / 4)));
+                this.mViewHolder.TextEuro.setText(String.format("%.2f", (real / 5)));
+
             }
         }
     }
 
     private void clearValues(){
+
         this.mViewHolder.TextDolar.setText("");
+        this.mViewHolder.TextEuro.setText("");
     }
     private static class ViewHolder {
 
