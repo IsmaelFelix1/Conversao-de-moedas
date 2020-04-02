@@ -10,24 +10,41 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Qual o valor em real?"
+        android:text="@string/qual_o_valor_em_real"
          />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/edit_value"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="O valor em Dolar"
+        android:text="@string/o_valor_em_dolar"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="O dolar"
-        android:id="@+id/TextDolar"
+        android:text="@string/o_dolar"
+        android:id="@+id/Text_dolar"
         />
-    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/o_valor_em_euro"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/euro"
+        android:id="@+id/TextEuro"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        android:id="@+id/buttonCalculate"
+    />
 
 
 </LinearLayout>

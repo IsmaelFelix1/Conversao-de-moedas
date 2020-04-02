@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">conversaomoedas</string>
+    <string name="qual_o_valor_em_real">Qual o valor em real?</string>
+    <string name="o_valor_em_dolar">O valor em Dolar</string>
+    <string name="o_dolar">O dolar</string>
+    <string name="o_valor_em_euro">O valor em Euro</string>
+    <string name="euro">Euro</string>
+    <string name="calcular">calcular</string>
+    <string name="informe_valor">Informe o valor</string>
 </resources>
